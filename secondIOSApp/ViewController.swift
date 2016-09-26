@@ -10,10 +10,11 @@ import UIKit
 
 class ViewController: UIViewController
 {
+  
 
+    @IBOutlet var background: UIView!
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myLabel: UILabel!
-    
     var timesClicked = 0
     
     override func viewDidLoad()
@@ -35,6 +36,8 @@ class ViewController: UIViewController
         timesClicked += 1
         myLabel.text = "The button was clicked \(timesClicked) times"
         myLabel.textColor = UIColor.orangeColor()
+        background.backgroundColor = UIColor.redColor()
+    
     }
 }
 

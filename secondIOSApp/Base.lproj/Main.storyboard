@@ -17,14 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thg-Am-wUW">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thg-Am-wUW">
                                 <rect key="frame" x="269" y="93" width="64" height="30"/>
                                 <state key="normal" title="Click me!"/>
                                 <connections>
                                     <action selector="clickedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="10p-na-n0v"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice Words" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgc-uZ-n3F">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nice Words" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgc-uZ-n3F">
                                 <rect key="frame" x="256" y="148" width="89" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,12 +35,13 @@
                         <constraints>
                             <constraint firstItem="mgc-uZ-n3F" firstAttribute="top" secondItem="thg-Am-wUW" secondAttribute="bottom" constant="25" id="0Nb-I0-LI7"/>
                             <constraint firstItem="mgc-uZ-n3F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8RX-Kz-qB7"/>
-                            <constraint firstItem="thg-Am-wUW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="L2g-Gl-ief"/>
+                            <constraint firstItem="thg-Am-wUW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="8vv-fa-Sj0"/>
                             <constraint firstItem="thg-Am-wUW" firstAttribute="centerX" secondItem="mgc-uZ-n3F" secondAttribute="centerX" id="p5Q-jg-AGw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YqD-qK-CVx"/>
                     <connections>
+                        <outlet property="background" destination="8bC-Xf-vdC" id="hf6-FT-lZN"/>
                         <outlet property="myButton" destination="thg-Am-wUW" id="G5b-Ze-1re"/>
                         <outlet property="myLabel" destination="mgc-uZ-n3F" id="kxe-P6-TMB"/>
                     </connections>
