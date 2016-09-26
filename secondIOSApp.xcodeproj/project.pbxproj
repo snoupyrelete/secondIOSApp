@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		2D8827FE1D9965DB007C6A21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8827FD1D9965DB007C6A21 /* AppDelegate.swift */; };
 		2D8828001D9965DB007C6A21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8827FF1D9965DB007C6A21 /* ViewController.swift */; };
-		2D8828031D9965DB007C6A21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8828011D9965DB007C6A21 /* Main.storyboard */; };
 		2D8828051D9965DB007C6A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8828041D9965DB007C6A21 /* Assets.xcassets */; };
 		2D8828081D9965DB007C6A21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8828061D9965DB007C6A21 /* LaunchScreen.storyboard */; };
+		2D8828111D996CFE007C6A21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D88280F1D996CFE007C6A21 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D8827FA1D9965DB007C6A21 /* secondIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = secondIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8827FD1D9965DB007C6A21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D8827FF1D9965DB007C6A21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2D8828021D9965DB007C6A21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D8828041D9965DB007C6A21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D8828071D9965DB007C6A21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D8828091D9965DB007C6A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D8828101D996CFE007C6A21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 			children = (
 				2D8827FD1D9965DB007C6A21 /* AppDelegate.swift */,
 				2D8827FF1D9965DB007C6A21 /* ViewController.swift */,
-				2D8828011D9965DB007C6A21 /* Main.storyboard */,
 				2D8828041D9965DB007C6A21 /* Assets.xcassets */,
+				2D88280F1D996CFE007C6A21 /* Main.storyboard */,
 				2D8828061D9965DB007C6A21 /* LaunchScreen.storyboard */,
 				2D8828091D9965DB007C6A21 /* Info.plist */,
 			);
@@ -122,9 +122,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8828111D996CFE007C6A21 /* Main.storyboard in Resources */,
 				2D8828081D9965DB007C6A21 /* LaunchScreen.storyboard in Resources */,
 				2D8828051D9965DB007C6A21 /* Assets.xcassets in Resources */,
-				2D8828031D9965DB007C6A21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,20 +143,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2D8828011D9965DB007C6A21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D8828021D9965DB007C6A21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2D8828061D9965DB007C6A21 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2D8828071D9965DB007C6A21 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2D88280F1D996CFE007C6A21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D8828101D996CFE007C6A21 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

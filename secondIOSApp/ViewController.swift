@@ -8,18 +8,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    @IBOutlet weak var myButton: UIButton!
+    @IBOutlet weak var myLabel: UILabel!
+    
+    var timesClicked = 0
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func clickedButton(sender: UIButton)
+    {
+        
+        timesClicked += 1
+        myLabel.text = "The button was clicked \(timesClicked) times"
+        myLabel.textColor = UIColor.orangeColor()
+    }
 }
 
