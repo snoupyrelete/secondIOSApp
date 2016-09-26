@@ -16,6 +16,7 @@ class ViewController: UIViewController
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myLabel: UILabel!
     var timesClicked = 0
+
     
     override func viewDidLoad()
     {
@@ -35,10 +36,27 @@ class ViewController: UIViewController
         
         timesClicked += 1
         myLabel.text = "The button was clicked \(timesClicked) times"
-        myLabel.textColor = UIColor.orangeColor()
-        background.backgroundColor = UIColor.redColor()
+        myLabel.textColor = createRandomColor()
         
+        myButton.backgroundColor = createRandomColor()
+        myButton.setTitleColor(createRandomColor(), forState: .Normal)
+        
+        background.backgroundColor = createRandomColor()
+        
+    }
     
+    private func createRandomColor() -> UIColor
+    {
+        let randomColor: UIColor
+        
+        let redColor: CGFloat = CGFloat(drand48())
+        let greenColor: CGFloat = CGFloat(drand48())
+        let blueColor: CGFloat = CGFloat(drand48())
+            
+        print("\(redColor) \(greenColor) \(blueColor)")
+        
+        randomColor = UIColor(red: redColor, green: greenColor, blue: blueColor, alpha: 1.0)
+        return randomColor
     }
 }
 
