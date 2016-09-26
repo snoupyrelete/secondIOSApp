@@ -12,9 +12,9 @@ class ViewController: UIViewController
 {
   
 
-    @IBOutlet var background: UIView!
-    @IBOutlet weak var myButton: UIButton!
-    @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet private var background: UIView!
+    @IBOutlet private weak var myButton: UIButton!
+    @IBOutlet private weak var myLabel: UILabel!
     var timesClicked = 0
 
     
@@ -31,7 +31,7 @@ class ViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func clickedButton(sender: UIButton)
+    @IBAction private func clickedButton(sender: UIButton)
     {
         
         timesClicked += 1
@@ -40,9 +40,9 @@ class ViewController: UIViewController
         
         myButton.backgroundColor = createRandomColor()
         myButton.setTitleColor(createRandomColor(), forState: .Normal)
+    
         
         background.backgroundColor = createRandomColor()
-        
     }
     
     private func createRandomColor() -> UIColor
