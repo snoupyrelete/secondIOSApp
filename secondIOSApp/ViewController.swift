@@ -37,6 +37,7 @@ class ViewController: UIViewController
         myLabel.text = "The button was clicked \(timesClicked) times"
         myLabel.textColor = UIColor.orangeColor()
         background.backgroundColor = UIColor.redColor()
+        
     
     }
 }
